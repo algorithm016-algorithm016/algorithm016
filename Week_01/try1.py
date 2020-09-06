@@ -6,3 +6,4 @@ Created on Sun Sep  6 13:38:53 2020
 """
 
 print("I love github")
+print("i love life")
