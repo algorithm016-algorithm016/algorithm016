@@ -18,12 +18,9 @@
 // Related Topics 数组 双指针
 // 👍 2571 👎 0
 
-
 package leetcode;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 public class ThreeSum {
 
@@ -33,6 +30,10 @@ public class ThreeSum {
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)
+
+    /**
+     * 双指针法，两遍夹逼 O(n2)
+     */
     class Solution {
         public List<List<Integer>> threeSum(int[] nums) {
             Arrays.sort(nums);
@@ -63,4 +64,30 @@ public class ThreeSum {
     }
 //leetcode submit region end(Prohibit modification and deletion)
 
+    /**
+     * hash法，未解决去重，测试用例未通过
+     */
+    class Solution2 {
+        public List<List<Integer>> threeSum(int[] nums) {
+            Arrays.sort(nums);
+            List<List<Integer>> list = new ArrayList<>();
+            for (int i = 0; i < nums.length - 2; i++) {
+                if (i > 0 && nums[i] == nums[i - 1]) {
+                    continue;
+                }
+                Map<Integer, Integer> map = new HashMap<>(2 * nums.length);
+                int sum = -nums[i];
+                for (int x = i + 1; x < nums.length; x++) {
+                    int yNum = sum - nums[x];
+                    Integer y = map.get(yNum);
+                    if (y == null) {
+                        map.put(nums[x], x);
+                    } else {
+                        list.add(Arrays.asList(nums[i], nums[x], nums[y]));
+                    }
+                }
+            }
+            return list;
+        }
+    }
 }

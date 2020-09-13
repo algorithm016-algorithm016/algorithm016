@@ -6,10 +6,15 @@
 ## 数组、链表、调表
 
 ### 数组
+暂无
 
 ### 链表
 
 head -> node -> tail
+
+快慢指针的特性：每轮移动之后两者的距离会加一，如果一个链表存在环，那么快慢指针必然会相遇。
+
+如果存在环，如何判断环的长度呢？方法是，快慢指针相遇后继续移动，直到第二次相遇。两次相遇间的移动次数即为环的长度。
 
 ### 跳表
 1. 链表元素是有序的
@@ -20,6 +25,25 @@ head -> node -> tail
 6. 空间复杂度是O(n)，但是实际复杂度大于原链表
 
 ![](./photo/理想跳表.jpg)
+
+### 栈和队列
+
+- stack：先进后出 LIFO last in first out
+- queue：先进先出 FIFO first in first out
+- deque：同时有以上两种特性
+
+### Priority Queue
+1. 底层数据结构 Heap、BST「binary search tree」
+
+#### API
+
+- peek()
+
+- push()
+- pop()
+
+- offer()
+- poll()
 
 ### 复杂度
 
@@ -37,6 +61,16 @@ head -> node -> tail
 |---|---|---|
 | 插入删除 | O(log n) | O(n) |
 | 搜索 | O(log n) | O(n) |
+
+| 栈和队列 | 时间复杂度 | 空间复杂度 |
+|---|---|---|
+| 插入删除 | O(1) | O(n) |
+| 搜索 | O(n) | O(n) |
+
+| 优先队列 | 时间复杂度 | 空间复杂度 |
+|---|---|---|
+| 插入 | O(1) | O(n) |
+| 取出 | O(log n) | O(n) |
 
 ### LeetCode
 
@@ -58,7 +92,19 @@ head -> node -> tail
 | 题目 | 项目链接 | leetcode |
 |---|---|---|
 | 206. 反转链表 | [ReverseLinkedList](leetcode/ReverseLinkedList.java) | [reverse-linked-list](https://leetcode-cn.com/problems/reverse-linked-list/) |
+| 141. 环形链表 | [LinkedListCycle](leetcode/LinkedListCycle.java) | [linked-list-cycle](https://leetcode-cn.com/problems/linked-list-cycle/) |
+| 142. 环形链表 II | [LinkedListCycleIi](leetcode/LinkedListCycleIi.java) | [linked-list-cycle-ii](https://leetcode-cn.com/problems/linked-list-cycle-ii/) |
+| 24. 两两交换链表中的节点 | [SwapNodesInPairs](leetcode/SwapNodesInPairs.java) | [swap-nodes-in-pairs](https://leetcode-cn.com/problems/swap-nodes-in-pairs/) |
 |  |  |  |
+
+#### 栈和队列
+| 题目 | 项目链接 | leetcode |
+|---|---|---|
+| 20. 有效的括号 | [ValidParentheses](leetcode/ValidParentheses.java) | [valid-parentheses](https://leetcode-cn.com/problems/valid-parentheses/) |
+| 84. 柱状图中最大的矩形 | [LargestRectangleInHistogram](leetcode/LargestRectangleInHistogram.java) | [largest-rectangle-in-histogram](https://leetcode-cn.com/problems/largest-rectangle-in-histogram/) |
+| 239. 滑动窗口最大值 | [SlidingWindowMaximum](leetcode/SlidingWindowMaximum.java) | [sliding-window-maximum](https://leetcode-cn.com/problems/sliding-window-maximum/) |
+|  |  |  |
+
 
 
 
