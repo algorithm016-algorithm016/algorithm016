@@ -41,8 +41,7 @@
 
 package leetcode;
 
-import java.util.Deque;
-import java.util.LinkedList;
+import java.util.*;
 
 public class SlidingWindowMaximum {
 
@@ -53,9 +52,26 @@ public class SlidingWindowMaximum {
     //leetcode submit region begin(Prohibit modification and deletion)
 
     /**
-     * 双端队列
+     * 大顶堆
      */
     class Solution {
+        public int[] maxSlidingWindow(int[] nums, int k) {
+            if (nums == null || nums.length < 2) {
+                return nums;
+            }
+            PriorityQueue<Integer> queue = new PriorityQueue<>();
+            int[] res = new int[nums.length - k + 1];
+            for (int i = 0; i < nums.length; i++) {
+                Map.Entry entry = new AbstractMap.SimpleEntry(i, nums[i]);
+            }
+        }
+    }
+//leetcode submit region end(Prohibit modification and deletion)
+
+    /**
+     * 双端队列
+     */
+    class Solution3 {
         public int[] maxSlidingWindow(int[] nums, int k) {
             Deque<Integer> deque = new LinkedList<>();
             if (nums == null || nums.length < 2) {
@@ -78,7 +94,6 @@ public class SlidingWindowMaximum {
             return res;
         }
     }
-//leetcode submit region end(Prohibit modification and deletion)
 
     /**
      * 暴力遍历

@@ -30,4 +30,8 @@
 | 题目 | 项目链接 | leetcode |
 |---|---|---|
 | 239. 滑动窗口最大值 | [SlidingWindowMaximum](leetcode/SlidingWindowMaximum.java) | [sliding-window-maximum](https://leetcode-cn.com/problems/sliding-window-maximum/) |
+| 剑指 Offer 40. 最小的k个数 | [ZuiXiaoDeKgeShuLcof](leetcode/ZuiXiaoDeKgeShuLcof.java) | [zui-xiao-de-kge-shu-lcof](https://leetcode-cn.com/problems/zui-xiao-de-kge-shu-lcof/) |
+| 剑指 Offer 49. 丑数 | [ChouShuLcof](leetcode/ChouShuLcof.java) | [chou-shu-lcof](https://leetcode-cn.com/problems/chou-shu-lcof/) |
+| 347. 前 K 个高频元素 | [TopKFrequentElements](leetcode/TopKFrequentElements.java) | [top-k-frequent-elements](https://leetcode-cn.com/problems/top-k-frequent-elements/) |
+|  | []() | []() |
 |  |  |  |
