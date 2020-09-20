@@ -1,5 +1,8 @@
 # 哈希表Hash、映射Map、集合Set
 
+## 心得
+本周学习时间同比增加50%，整体感觉良好，应该基本完成了学习任务，不过五毒法仍未完全遵守，还需要增加学习时间、学习频率。
+
 ## Hash
 
 ### HashMap
@@ -65,14 +68,17 @@
 
 | 二叉堆 | 时间复杂度 | 空间复杂度 |
 |---|---|---|
-| 插入，删除顶      | O(logN)   | O(n) |
-| 最大值、最小值 | O(1)      | O(n) |
+| 插入，删除顶   | O(logN)   | O(n) |
+| 最大值、最小值  | O(1)      | O(n) |
+
+### LeetCode
 
 #### 哈希表Hash、映射Map、集合Set
 | 题目 | 项目链接 | leetcode |
 |---|---|---|
 | 242. 有效的字母异位词 | [ValidAnagram](leetcode/ValidAnagram.java) | [valid-anagram](https://leetcode-cn.com/problems/valid-anagram/) |
 | 49. 字母异位词分组 | [GroupAnagrams](leetcode/GroupAnagrams.java) | [group-anagrams](https://leetcode-cn.com/problems/group-anagrams/) |
+|  | []() | []() |
 
 #### 树、二叉树、二叉搜索树
 | 题目 | 项目链接 | leetcode |
