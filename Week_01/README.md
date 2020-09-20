@@ -12,12 +12,10 @@
 ## 总结
 1. 一维数据结构加速通常需要升为二维
 
-## 数组、链表、跳表
-
-### 数组
+## 数组
 暂无
 
-### 链表
+## 链表
 
 head -> node -> tail
 
@@ -25,7 +23,7 @@ head -> node -> tail
 
 如果存在环，如何判断环的长度呢？方法是，快慢指针相遇后继续移动，直到第二次相遇。两次相遇间的移动次数即为环的长度。
 
-### 跳表
+## 跳表
 1. 链表元素是有序的
 2. 出现的很晚（1990年）
 3. 对标平衡二叉搜索树「AVL Tree」和二分查找
@@ -35,16 +33,16 @@ head -> node -> tail
 
 ![](./photo/理想跳表.jpg)
 
-### 栈和队列
+## 栈和队列
 
 - stack：先进后出 LIFO last in first out
 - queue：先进先出 FIFO first in first out
 - deque：同时有以上两种特性
 
-### Priority Queue
+## Priority Queue
 1. 底层数据结构 Heap、BST「binary search tree」
 
-#### API
+### API
 
 - peek()
 
@@ -54,7 +52,7 @@ head -> node -> tail
 - offer()
 - poll()
 
-### 复杂度
+## 复杂度
 
 | 数组 | 时间复杂度 | 空间复杂度 |
 |---|---|---|
@@ -81,9 +79,9 @@ head -> node -> tail
 | 插入 | O(1) | O(n) |
 | 取出 | O(log n) | O(n) |
 
-### LeetCode
+## LeetCode
 
-#### 数组
+### 数组
 | 题目 | 项目链接 | leetcode |
 |---|---|---|
 | 26. 删除排序数组中的重复项 | [RemoveDuplicatesFromSortedArray](leetcode/RemoveDuplicatesFromSortedArray.java) | [remove-duplicates-from-sorted-array](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) |
@@ -97,7 +95,7 @@ head -> node -> tail
 | 18. 四数之和 | [FourSum](leetcode/FourSum.java) | [4sum](https://leetcode-cn.com/problems/4sum/) |
 |  |  |  |
 
-#### 链表
+### 链表
 | 题目 | 项目链接 | leetcode |
 |---|---|---|
 | 206. 反转链表 | [ReverseLinkedList](leetcode/ReverseLinkedList.java) | [reverse-linked-list](https://leetcode-cn.com/problems/reverse-linked-list/) |
@@ -106,7 +104,7 @@ head -> node -> tail
 | 24. 两两交换链表中的节点 | [SwapNodesInPairs](leetcode/SwapNodesInPairs.java) | [swap-nodes-in-pairs](https://leetcode-cn.com/problems/swap-nodes-in-pairs/) |
 |  |  |  |
 
-#### 栈和队列
+### 栈和队列
 | 题目 | 项目链接 | leetcode |
 |---|---|---|
 | 20. 有效的括号 | [ValidParentheses](leetcode/ValidParentheses.java) | [valid-parentheses](https://leetcode-cn.com/problems/valid-parentheses/) |
@@ -117,6 +115,6 @@ head -> node -> tail
 
 
 
-### 参考资料
+## 参考资料
 [LRU缓存算法](https://www.jianshu.com/p/b1ab4a170c3c)
 [Redis 跳表实现](https://redisbook.readthedocs.io/en/latest/internal-datastruct/skiplist.html)

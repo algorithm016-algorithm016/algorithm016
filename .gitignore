@@ -1,5 +1,5 @@
 .idea/
-*.iml
+#*.iml 此项需要同步，便于项目格式的共享
 out/
 gen/
 idea-gitignore.jar
