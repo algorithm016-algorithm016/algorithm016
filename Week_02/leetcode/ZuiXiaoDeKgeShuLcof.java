@@ -36,6 +36,10 @@ public class ZuiXiaoDeKgeShuLcof {
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)
+
+    /**
+     * 小顶堆，O(NlogK)
+     */
     class Solution {
         public int[] getLeastNumbers(int[] arr, int k) {
             PriorityQueue<Integer> queue = new PriorityQueue<>();

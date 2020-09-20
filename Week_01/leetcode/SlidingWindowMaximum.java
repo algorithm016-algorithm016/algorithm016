@@ -43,6 +43,7 @@ package leetcode;
 
 import java.util.Deque;
 import java.util.LinkedList;
+import java.util.PriorityQueue;
 
 public class SlidingWindowMaximum {
 
@@ -53,7 +54,7 @@ public class SlidingWindowMaximum {
     //leetcode submit region begin(Prohibit modification and deletion)
 
     /**
-     * 双端队列
+     * 双端队列,O(n)
      */
     class Solution {
         public int[] maxSlidingWindow(int[] nums, int k) {
@@ -81,19 +82,45 @@ public class SlidingWindowMaximum {
 //leetcode submit region end(Prohibit modification and deletion)
 
     /**
+     * 大顶堆，O(NlogK),数量庞大时执行超时
+     * 不过看起来能通过简单的用例
+     */
+    class Solution3 {
+        public int[] maxSlidingWindow(int[] nums, int k) {
+            PriorityQueue<Integer> queue = new PriorityQueue<>((o1, o2) -> o2 - o1);
+            if (nums == null || nums.length < 2) {
+                return nums;
+            }
+            int[] res = new int[nums.length - k + 1];
+            int j = 0;
+            for (int i = 0; i < nums.length; i++) {
+                queue.add(nums[i]);
+                if (queue.size() >= k) {
+                    res[j++] = queue.peek();
+                    queue.remove(nums[i - k + 1]);
+                }
+            }
+            return res;
+        }
+    }
+
+    /**
      * 暴力遍历
      */
     class Solution2 {
         public int[] maxSlidingWindow(int[] nums, int k) {
-            int[] arr = new int[nums.length - k + 1];
+            if (nums == null || nums.length < 2) {
+                return nums;
+            }
+            int[] res = new int[nums.length - k + 1];
             for (int i = 0; i < nums.length - k + 1; i++) {
                 int max = nums[i];
                 for (int j = 1; j < k; j++) {
                     max = Math.max(max, nums[i + j]);
                 }
-                arr[i] = max;
+                res[i] = max;
             }
-            return arr;
+            return res;
         }
     }
 }

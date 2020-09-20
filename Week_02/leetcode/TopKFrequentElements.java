@@ -48,10 +48,12 @@ public class TopKFrequentElements {
      */
     class Solution {
         public int[] topKFrequent(int[] nums, int k) {
+            if (nums == null || nums.length < 2) {
+                return nums;
+            }
             Map<Integer, Integer> map = new HashMap<>(nums.length);
             for (int num : nums) {
-                map.putIfAbsent(num, 0);
-                map.put(num, map.get(num) + 1);
+                map.put(num, map.getOrDefault(num, 0) + 1);
             }
             PriorityQueue<Map.Entry<Integer, Integer>> queue = new PriorityQueue<>(Comparator.comparingInt(Map.Entry::getValue));
             for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
@@ -60,8 +62,8 @@ public class TopKFrequentElements {
                     queue.poll();
                 }
             }
-            int[] res = new int[queue.size()];
-            for (int i = 0; i < res.length; i++) {
+            int[] res = new int[k];
+            for (int i = 0; !queue.isEmpty() && i < k; i++) {
                 res[i] = queue.poll().getKey();
             }
             return res;
@@ -69,4 +71,28 @@ public class TopKFrequentElements {
     }
 //leetcode submit region end(Prohibit modification and deletion)
 
+
+    /**
+     * 大顶堆，无限制容量
+     * O(NlogN)，时间复杂度不符合要求
+     */
+    class Solution2 {
+        public int[] topKFrequent(int[] nums, int k) {
+            if (nums == null || nums.length < 2) {
+                return nums;
+            }
+            Map<Integer, Integer> map = new HashMap<>(nums.length);
+            for (int num : nums) {
+                map.putIfAbsent(num, 0);
+                map.put(num, map.get(num) + 1);
+            }
+            PriorityQueue<Map.Entry<Integer, Integer>> queue = new PriorityQueue<>((o1, o2) -> o2.getValue() - o1.getValue());
+            queue.addAll(map.entrySet());
+            int[] res = new int[k];
+            for (int i = 0; !queue.isEmpty() && i < k; i++) {
+                res[i] = queue.poll().getKey();
+            }
+            return res;
+        }
+    }
 }
