@@ -84,32 +84,32 @@ head -> node -> tail
 ### 数组
 | 题目 | 项目链接 | leetcode |
 |---|---|---|
-| 26. 删除排序数组中的重复项 | [RemoveDuplicatesFromSortedArray](leetcode/RemoveDuplicatesFromSortedArray.java) | [remove-duplicates-from-sorted-array](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) |
-| 1. 两数之和 | [TwoSum](leetcode/TwoSum.java) | [two-sum](https://leetcode-cn.com/problems/two-sum/) |
-| 15. 三数之和 | [ThreeSum](leetcode/ThreeSum.java) | [3sum](https://leetcode-cn.com/problems/3sum/) |
-| 283. 移动零 | [MoveZeroes](leetcode/MoveZeroes.java) | [move-zeroes](https://leetcode-cn.com/problems/move-zeroes/) |
-| 11. 盛最多水的容器 | [ContainerWithMostWater](leetcode/ContainerWithMostWater.java) | [container-with-most-water](https://leetcode-cn.com/problems/container-with-most-water/) |
-| 70. 爬楼梯 | [ClimbingStairs](leetcode/ClimbingStairs.java) | [climbing-stairs](https://leetcode-cn.com/problems/climbing-stairs/) |
+| 26. 删除排序数组中的重复项 | [RemoveDuplicatesFromSortedArray](leetcode1/RemoveDuplicatesFromSortedArray.java) | [remove-duplicates-from-sorted-array](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) |
+| 1. 两数之和 | [TwoSum](leetcode1/TwoSum.java) | [two-sum](https://leetcode-cn.com/problems/two-sum/) |
+| 15. 三数之和 | [ThreeSum](leetcode1/ThreeSum.java) | [3sum](https://leetcode-cn.com/problems/3sum/) |
+| 283. 移动零 | [MoveZeroes](leetcode1/MoveZeroes.java) | [move-zeroes](https://leetcode-cn.com/problems/move-zeroes/) |
+| 11. 盛最多水的容器 | [ContainerWithMostWater](leetcode1/ContainerWithMostWater.java) | [container-with-most-water](https://leetcode-cn.com/problems/container-with-most-water/) |
+| 70. 爬楼梯 | [ClimbingStairs](leetcode1/ClimbingStairs.java) | [climbing-stairs](https://leetcode-cn.com/problems/climbing-stairs/) |
 |---|||
-| 16. 最接近的三数之和 | [ThreeSumClosest](leetcode/ThreeSumClosest.java) | [3sum-closest](https://leetcode-cn.com/problems/3sum-closest/) |
-| 18. 四数之和 | [FourSum](leetcode/FourSum.java) | [4sum](https://leetcode-cn.com/problems/4sum/) |
+| 16. 最接近的三数之和 | [ThreeSumClosest](leetcode1/ThreeSumClosest.java) | [3sum-closest](https://leetcode-cn.com/problems/3sum-closest/) |
+| 18. 四数之和 | [FourSum](leetcode1/FourSum.java) | [4sum](https://leetcode-cn.com/problems/4sum/) |
 |  |  |  |
 
 ### 链表
 | 题目 | 项目链接 | leetcode |
 |---|---|---|
-| 206. 反转链表 | [ReverseLinkedList](leetcode/ReverseLinkedList.java) | [reverse-linked-list](https://leetcode-cn.com/problems/reverse-linked-list/) |
-| 141. 环形链表 | [LinkedListCycle](leetcode/LinkedListCycle.java) | [linked-list-cycle](https://leetcode-cn.com/problems/linked-list-cycle/) |
-| 142. 环形链表 II | [LinkedListCycleIi](leetcode/LinkedListCycleIi.java) | [linked-list-cycle-ii](https://leetcode-cn.com/problems/linked-list-cycle-ii/) |
-| 24. 两两交换链表中的节点 | [SwapNodesInPairs](leetcode/SwapNodesInPairs.java) | [swap-nodes-in-pairs](https://leetcode-cn.com/problems/swap-nodes-in-pairs/) |
+| 206. 反转链表 | [ReverseLinkedList](leetcode1/ReverseLinkedList.java) | [reverse-linked-list](https://leetcode-cn.com/problems/reverse-linked-list/) |
+| 141. 环形链表 | [LinkedListCycle](leetcode1/LinkedListCycle.java) | [linked-list-cycle](https://leetcode-cn.com/problems/linked-list-cycle/) |
+| 142. 环形链表 II | [LinkedListCycleIi](leetcode1/LinkedListCycleIi.java) | [linked-list-cycle-ii](https://leetcode-cn.com/problems/linked-list-cycle-ii/) |
+| 24. 两两交换链表中的节点 | [SwapNodesInPairs](leetcode1/SwapNodesInPairs.java) | [swap-nodes-in-pairs](https://leetcode-cn.com/problems/swap-nodes-in-pairs/) |
 |  |  |  |
 
 ### 栈和队列
 | 题目 | 项目链接 | leetcode |
 |---|---|---|
-| 20. 有效的括号 | [ValidParentheses](leetcode/ValidParentheses.java) | [valid-parentheses](https://leetcode-cn.com/problems/valid-parentheses/) |
-| 84. 柱状图中最大的矩形 | [LargestRectangleInHistogram](leetcode/LargestRectangleInHistogram.java) | [largest-rectangle-in-histogram](https://leetcode-cn.com/problems/largest-rectangle-in-histogram/) |
-| 239. 滑动窗口最大值 | [SlidingWindowMaximum](leetcode/SlidingWindowMaximum.java) | [sliding-window-maximum](https://leetcode-cn.com/problems/sliding-window-maximum/) |
+| 20. 有效的括号 | [ValidParentheses](leetcode1/ValidParentheses.java) | [valid-parentheses](https://leetcode-cn.com/problems/valid-parentheses/) |
+| 84. 柱状图中最大的矩形 | [LargestRectangleInHistogram](leetcode1/LargestRectangleInHistogram.java) | [largest-rectangle-in-histogram](https://leetcode-cn.com/problems/largest-rectangle-in-histogram/) |
+| 239. 滑动窗口最大值 | [SlidingWindowMaximum](leetcode1/SlidingWindowMaximum.java) | [sliding-window-maximum](https://leetcode-cn.com/problems/sliding-window-maximum/) |
 |  |  |  |
 
 
