@@ -1,4 +1,4 @@
-package leetcode;
+package leetcode.template;
 
 public class Test {
 

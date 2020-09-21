@@ -54,23 +54,24 @@ public class ClimbingStairs {
     //leetcode submit region end(Prohibit modification and deletion)
 
     /**
-     * 递归
+     * 递归 + 存储中间计算结果
      */
     class Solution2 {
         public int climbStairs(int n) {
-            return f(n, new HashMap<>());
+            Map<Integer, Integer> map = new HashMap<>();
+            return resolve(n, map);
         }
 
-        public int f(int n, Map<Integer, Integer> map) {
+        private int resolve(int n, Map<Integer, Integer> map) {
             if (n <= 2) {
                 return n;
             }
-            if (map.get(n) != null) {
-                return map.get(n);
+            Integer count = map.get(n);
+            if (count == null) {
+                count = resolve(n - 1, map) + resolve(n - 2, map);
+                map.put(n, count);
             }
-            int rtn = f(n - 1, map) + f(n - 2, map);
-            map.put(n, rtn);
-            return rtn;
+            return count;
         }
     }
 }
