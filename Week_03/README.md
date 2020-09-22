@@ -42,8 +42,10 @@ public class Test {
 |---|---|---|---|
 | 22. 括号生成 | [GenerateParentheses](leetcode3/GenerateParentheses.java) | [generate-parentheses](https://leetcode-cn.com/problems/generate-parentheses/) | 递归 + 剪枝  |
 | 226. 翻转二叉树 | [InvertBinaryTree](leetcode3/InvertBinaryTree.java) | [invert-binary-tree](https://leetcode-cn.com/problems/invert-binary-tree/) | 递归模板实现即可，还可以使用DFS、BFS两者代码基本一致  |
-| 98. 验证二叉搜索树 | []() | [validate-binary-search-tree](https://leetcode-cn.com/problems/validate-binary-search-tree/) |   |
-|  | []() | []() |   |
+| 98. 验证二叉搜索树 | [ValidateBinarySearchTree](leetcode3/ValidateBinarySearchTree.java) | [validate-binary-search-tree](https://leetcode-cn.com/problems/validate-binary-search-tree/) | 二叉搜索树的中序遍历是单调递增的 |
+| 104. 二叉树的最大深度 | [MaximumDepthOfBinaryTree](leetcode3/MaximumDepthOfBinaryTree.java) | [maximum-depth-of-binary-tree](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/) | 由逐层计算深度，由上到下、由下到上均可  |
+| 111. 二叉树的最小深度 | [MinimumDepthOfBinaryTree](leetcode3/MinimumDepthOfBinaryTree.java) | [minimum-depth-of-binary-tree](https://leetcode-cn.com/problems/minimum-depth-of-binary-tree/) |   |
+| 297. 二叉树的序列化与反序列化 | [serialize-and-deserialize-binary-tree](https://leetcode-cn.com/problems/serialize-and-deserialize-binary-tree/) | [SerializeAndDeserializeBinaryTree](leetcode3/SerializeAndDeserializeBinaryTree.java) | 代码量较大，应该没有精简代码的解法 |
 |  | []() | []() |   |
 |  |  |  |   |
 
