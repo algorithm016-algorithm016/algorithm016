@@ -11,6 +11,7 @@
 
 ## 总结
 1. 一维数据结构加速通常需要升为二维
+2. 好文：[数据结构与算法之美笔记 : 平衡二叉树、跳表、B - Tree、 B + Tree 、 B * Tree](https://blog.csdn.net/zhanglong_4444/article/details/90603453)
 
 ## 数组
 暂无
